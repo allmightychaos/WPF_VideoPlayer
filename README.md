@@ -1,4 +1,4 @@
-# WPFVideoPlayer
+# WPF VideoPlayer
 
 ## Aufgabe
 Erstellen Sie einen Videoplayer in WPF. Der Videoplayer soll folgende Elemente enthalten:
