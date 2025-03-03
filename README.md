@@ -57,3 +57,6 @@ Das MediaElement kann alle Medien abspielen die auch der Windows-Media-Player ab
 
 Damit das MediaElement im Code gesteuert werden kann muss das LoadedBehavior="Manual" gesetzt sein!
 
+## Test Videos
+
+Download the videos [here](https://github.com/allmightychaos/WPF_VideoPlayer/raw/master/example_videos.zip).
