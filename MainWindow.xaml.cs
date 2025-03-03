@@ -352,12 +352,16 @@ namespace WPFVideoPlayer
         {
             gridPlaylist.Visibility = gridPlaylist.Visibility == Visibility.Visible ?
                 Visibility.Collapsed : Visibility.Visible;
+            btnTogglePlaylist.Content = gridPlaylist.Visibility == Visibility.Visible ?
+                "Hide Playlist" : "Show Playlist";
         }
 
         private void ToggleHistory_Click(object sender, RoutedEventArgs e)
         {
             gridHistory.Visibility = gridHistory.Visibility == Visibility.Visible ?
                 Visibility.Collapsed : Visibility.Visible;
+            btnToggleHistory.Content = gridHistory.Visibility == Visibility.Visible ?
+                "Hide History" : "Show History";
         }
 
         private void lstPlaylist_MouseDoubleClick(object sender, MouseButtonEventArgs e)

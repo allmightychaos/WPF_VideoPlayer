@@ -84,8 +84,8 @@
     <DockPanel LastChildFill="True">
         <!-- Top Controls -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,5">
-            <Button x:Name="btnTogglePlaylist" Content="Show/Hide Playlist" Style="{StaticResource MediaButtonStyle}" Click="TogglePlaylist_Click"/>
-            <Button x:Name="btnToggleHistory" Content="Show/Hide History" Style="{StaticResource MediaButtonStyle}" Click="ToggleHistory_Click"/>
+			<Button x:Name="btnTogglePlaylist" Content="Hide Playlist" Style="{StaticResource MediaButtonStyle}" Click="TogglePlaylist_Click"/>
+			<Button x:Name="btnToggleHistory" Content="Hide History" Style="{StaticResource MediaButtonStyle}" Click="ToggleHistory_Click"/>
         </StackPanel>
 
         <!-- Right Panel - Playlist -->
@@ -163,8 +163,9 @@
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Button x:Name="btnPrevious" Content="⏮" Style="{StaticResource MediaButtonStyle}" 
                             Command="{Binding PreviousCommand}" FontSize="16"/>
-                    <Button x:Name="btnPlayPause" Content="▶" Style="{StaticResource MediaButtonStyle}" 
-                            Command="{Binding PlayPauseCommand}" FontSize="16"/>
+					<!-- Modify the button in the bottom control section -->
+					<Button x:Name="btnPlayPause" Content="▶" Style="{StaticResource MediaButtonStyle}"
+							Command="{Binding PlayPauseCommand}" FontSize="16" Width="40"/>
                     <Button x:Name="btnStop" Content="⏹" Style="{StaticResource MediaButtonStyle}" 
                             Command="{Binding StopCommand}" FontSize="16"/>
                     <Button x:Name="btnNext" Content="⏭" Style="{StaticResource MediaButtonStyle}" 
